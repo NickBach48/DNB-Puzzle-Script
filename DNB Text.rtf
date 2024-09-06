@@ -77,12 +77,12 @@ Pink \
 LEGEND\
 =======\
 \
-. = Background\
-# = Water_Ballon\
-P = Player\
-* = Wall1\
-@ = Wall1 and Neighbor\
-O = Neighbor\
+. = background\
+# = guy\
+P = player\
+* = wall1\
+@ = wall1 and Neighbor\
+O = neighbor\
 a\
 \
 =======\
@@ -94,30 +94,30 @@ COLLISIONLAYERS\
 ================\
 \
 Background\
-Target\
-Player, Wall, Crate\
+neighbor\
+Player, Wall1, guy\
 \
 ======\
 RULES\
 ======\
 \
-[ > Player | Crate ] -> [ > Player | > Crate ]\
+[ > Player | wall1 ] -> [ > Player | > wall1 ]\
 \
 ==============\
 WINCONDITIONS\
 ==============\
 \
-all Target on Crate\
+all neighbor on player\
 \
 =======\
 LEVELS\
 =======\
 \
-#########\
-#.......#\
-#.....@.#\
-#.P.*.O.#\
-#.......#\
-#.......#\
-#########\
+.........\
+.........\
+......@..\
+#...*....\
+.........\
+.......O.\
+.........\
 }
