@@ -5,6 +5,110 @@
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 Hello!\
-Hi\
-Poop}
+\f0\fs24 \cf0 title My Game\
+author My Name Here\
+homepage www.puzzlescript.net\
+\
+========\
+OBJECTS\
+========\
+\
+Background\
+green\
+\
+Target\
+black red #ffdbac\
+.000.\
+.222.\
+11111\
+11111\
+.2.2.\
+\
+Wall\
+brown blue #D2b48c\
+.000.\
+.222.\
+11111\
+11111\
+.2.2.\
+\
+Player\
+blue lightblue\
+.....\
+.001.\
+.000.\
+.000.\
+..0..\
+\
+Crate1\
+Pink\
+....0\
+...00\
+..000\
+.0000\
+00000\
+\
+Crate2\
+Pink\
+0....\
+00...\
+000..\
+0000.\
+00000\
+\
+Crate3\
+Pink\
+00000\
+0000.\
+000..\
+00...\
+0....\
+\
+\
+=======\
+LEGEND\
+=======\
+\
+. = Background\
+# = Wall\
+P = Player\
+* = Crate\
+@ = Crate and Target\
+O = Target\
+\
+=======\
+SOUNDS\
+=======\
+\
+================\
+COLLISIONLAYERS\
+================\
+\
+Background\
+Target\
+Player, Wall, Crate\
+\
+======\
+RULES\
+======\
+\
+[ > Player | Crate ] -> [ > Player | > Crate ]\
+\
+==============\
+WINCONDITIONS\
+==============\
+\
+all Target on Crate\
+\
+=======\
+LEVELS\
+=======\
+\
+#########\
+#.......#\
+#.....@.#\
+#.P.*.O.#\
+#.......#\
+#.......#\
+#########\
+}
