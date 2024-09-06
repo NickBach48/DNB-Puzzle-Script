@@ -80,10 +80,13 @@ LEGEND\
 . = background\
 # = guy\
 P = player\
-* = wall1\
-@ = wall1 and Neighbor\
+* = \
+@ = guy and player\
 O = neighbor\
-a\
+1 = wall1\
+2 = wall2\
+3 = wall3\
+4 = wall4\
 \
 =======\
 SOUNDS\
@@ -95,7 +98,7 @@ COLLISIONLAYERS\
 \
 Background\
 neighbor\
-Player, Wall1, guy\
+Player, Wall1, wall2, wall3, wall4, guy\
 \
 ======\
 RULES\
@@ -115,8 +118,8 @@ LEVELS\
 \
 .........\
 .........\
-......@..\
-#...*....\
+.........\
+@......4.\
 .........\
 .......O.\
 .........\
