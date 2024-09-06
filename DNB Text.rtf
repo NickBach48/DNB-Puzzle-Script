@@ -72,6 +72,14 @@ Pink \
 ...00\
 ....0\
 \
+crate\
+brown\
+00000\
+00000\
+00000\
+00000\
+00000\
+\
 \
 =======\
 LEGEND\
@@ -80,13 +88,13 @@ LEGEND\
 . = background\
 # = guy\
 P = player\
-* = \
 @ = guy and player\
 O = neighbor\
 1 = wall1\
 2 = wall2\
 3 = wall3\
 4 = wall4\
+c = crate\
 \
 =======\
 SOUNDS\
@@ -98,11 +106,16 @@ COLLISIONLAYERS\
 \
 Background\
 neighbor\
-Player, Wall1, wall2, wall3, wall4, guy\
+Wall1, wall2, wall3, wall4, guy, crate\
+Player\
 \
 ======\
 RULES\
 ======\
+[ > Player | wall1 ] -> [ v Player | Crate ]\
+[ > Player | Crate ] -> [ v Player | Crate ]\
+[ > Player | Crate ] -> [ v Player | Crate ]\
+[ > Player | Crate ] -> [ v Player | Crate ]\
 \
 [ > Player | wall1 ] -> [ > Player | > wall1 ]\
 \
@@ -118,7 +131,7 @@ LEVELS\
 \
 .........\
 .........\
-.........\
+....c....\
 @......4.\
 .........\
 .......O.\
