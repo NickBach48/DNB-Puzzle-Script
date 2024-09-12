@@ -6,7 +6,7 @@
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 title My Game\
-author My Name Here\
+author Dom, Nick, and Beckett\
 homepage www.puzzlescript.net\
 \
 again_interval 1\
@@ -58,11 +58,11 @@ green darkgreen\
 \
 tracks2\
 green darkgreen\
-00000\
-01000\
-01010\
-00010\
-00000\
+.....\
+.1...\
+.1.1.\
+...1.\
+.....\
 \
 \
 =======\
@@ -75,7 +75,7 @@ P = player\
 O = neighbor\
 \
 c = crate\
-item =crate or tracks1\
+item =crate or tracks1 or tracks2\
 \
 =======\
 SOUNDS\
@@ -96,7 +96,7 @@ RIGHT[> player | no item] -> [tracks1| > player]\
 LEFT [> player | no item] -> [tracks1| > player]\
 UP[> player | no item] -> [tracks2| > player]\
 DOWN [> player | no item] -> [tracks2| > player]\
-[> player | item] -> [ player|item]\
+[> player | item] -> [ player |item]\
 \
 \
 \
@@ -114,11 +114,44 @@ all neighbor on player\
 LEVELS\
 =======\
 \
-......c..\
-.........\
-....c....\
-p........\
-.........\
-......cO.\
-.......c.\
+Message Use WASD or Arrows to move\
+\
+p.......c\
+ccccccc.c\
+c...cOc.c\
+c.c...c.c\
+c.ccccc.c\
+c.......c\
+ccccccccc\
+\
+Message Level 1/3\
+\
+p.......\
+........\
+........\
+....o...\
+........\
+........\
+........\
+\
+Message Level 2/3\
+\
+.......\
+.......\
+.......\
+.......\
+.......\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 }
