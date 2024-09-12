@@ -48,13 +48,21 @@ brown\
 00000\
 00000\
 \
-tracks\
+tracks1\
 green darkgreen\
 .....\
 ..11.\
 .....\
 .11..\
 .....\
+\
+tracks2\
+green darkgreen\
+00000\
+01000\
+01010\
+00010\
+00000\
 \
 \
 =======\
@@ -67,7 +75,7 @@ P = player\
 O = neighbor\
 \
 c = crate\
-item =crate or tracks\
+item =crate or tracks1\
 \
 =======\
 SOUNDS\
@@ -78,13 +86,16 @@ COLLISIONLAYERS\
 ================\
 \
 Background\
-crate, tracks\
+crate, tracks1, tracks2\
 Player, neighbor\
 \
 ======\
 RULES\
 ======\
-[> player | no item] -> [tracks | > player]\
+RIGHT[> player | no item] -> [tracks1| > player]\
+LEFT [> player | no item] -> [tracks1| > player]\
+UP[> player | no item] -> [tracks2| > player]\
+DOWN [> player | no item] -> [tracks2| > player]\
 [> player | item] -> [ player|item]\
 \
 \
