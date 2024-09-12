@@ -15,25 +15,23 @@ OBJECTS\
 ========\
 \
 background\
-green\
-\
-neighbor\
-black red #ffdbac\
-.000.\
-.222.\
-11111\
-11111\
-.2.2.\
-\
-guy\
-brown blue #D2b48c\
-.000.\
-.222.\
-11111\
-11111\
-.2.2.\
+#29ba52 #22ab49 \
+01000\
+10010\
+00000\
+01011\
+10000\
 \
 player\
+#9c5a3c #4d6df3 #ffdbac white\
+.000.\
+.222.\
+21312\
+.111.\
+.1.1.\
+\
+\
+neighbor\
 blue lightblue\
 .....\
 .001.\
@@ -41,37 +39,6 @@ blue lightblue\
 .000.\
 ..0..\
 \
-wall1\
-Pink\
-....0\
-...00\
-..000\
-.0000\
-00000\
-\
-wall2\
-Pink\
-0....\
-00...\
-000..\
-0000.\
-00000\
-\
-wall3\
-Pink\
-00000\
-0000.\
-000..\
-00...\
-0....\
-\
-wall4\
-Pink \
-00000\
-.0000\
-..000\
-...00\
-....0\
 \
 crate\
 brown\
@@ -83,11 +50,11 @@ brown\
 \
 tracks\
 green darkgreen\
-00000\
-00110\
-00000\
-01100\
-00000\
+.....\
+..11.\
+.....\
+.11..\
+.....\
 \
 \
 =======\
@@ -95,16 +62,12 @@ LEGEND\
 =======\
 \
 . = background\
-# = guy\
+\
 P = player\
-@ = guy and player\
 O = neighbor\
-1 = wall1\
-2 = wall2\
-3 = wall3\
-4 = wall4\
+\
 c = crate\
-item = wall1 or wall2 or wall3 or wall4 or crate or tracks\
+item =crate or tracks\
 \
 =======\
 SOUNDS\
@@ -115,7 +78,7 @@ COLLISIONLAYERS\
 ================\
 \
 Background\
-Wall1, wall2, wall3, wall4, guy, crate, tracks\
+crate, tracks\
 Player, neighbor\
 \
 ======\
@@ -144,7 +107,7 @@ LEVELS\
 ......c..\
 .........\
 ....c....\
-@........\
+p........\
 .........\
 ......cO.\
 .......c.\
